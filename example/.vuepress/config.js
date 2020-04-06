@@ -17,7 +17,7 @@ module.exports = {
   },
   plugins: [
     [
-      require('../../lib'),
+      require('../../lib'), // 'dynamic-page',
       {
         cache: false,
         cdn: {

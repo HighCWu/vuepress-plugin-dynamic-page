@@ -1,27 +1,30 @@
 {
   "name": "vuepress-plugin-dynamic-page",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "make your static vuepress site dynamic",
   "author": "HighCWu",
+  "keywords": [],
   "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
   "scripts": {
-    "dev": "cd example && vuepress dev --debug --no-clear-screen",
-    "build": "vuepress build --debug"
+    "dev": "cd example && vuepress dev",
+    "build": "cd example && vuepress build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/HighCWu/vuepress-plugin-dynamic-page"
+    "url": "HighCWu/vuepress-plugin-dynamic-page"
   },
-  "devDependencies": {
+  "dependencies": {
+    "node-require-alias": "1.0.1"
+  },
+  "peerDependencies": {
     "vuepress": "^1.3.1"
   },
-  "keywords": [],
-  "dependencies": {
-    "escodegen": "1.14.1",
-    "esprima": "4.0.1",
-    "estraverse": "4.3.0",
-    "http-vue-loader": "1.4.2",
-    "node-require-alias": "1.0.1",
-    "regexp-replace-loader": "1.0.1"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
